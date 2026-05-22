@@ -1,0 +1,546 @@
+:root {
+  --preto-fundo: #211515;
+  --bordo: #540b14;
+  --white: #e0dbd7;
+  --bege: #ccc0b2;
+  --text-dark: #1a1a1a;
+  --text-muted: #666;
+  --serif: "Playfair Display", serif;
+  --sans: "Montserrat", sans-serif;
+}
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Hero Section */
+.hero {
+  background: url(assets/hero.png);
+  background-size: cover;
+  background-position: right center;
+  color: white;
+  padding: 80px 40px 100px;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.logo img {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  max-width: clamp(75px, 20%, 100px);
+  height: auto;
+}
+
+.logo-text {
+  max-width: clamp(100px, 20%, 175px);
+  height: auto;
+}
+
+.hero-content h1 {
+  font-family: var(--serif);
+  color: var(--white);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, #e0dbd7 26%, #540b14 93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.hero-price {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  opacity: 0.95;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--bege);
+  color: var(--preto-fundo);
+  padding: 12px 48px;
+  border-radius: 8px;
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 2px;
+}
+
+/*.cta-button:hover {
+  background: var(--preto-fundo);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}*/
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 30px;
+  border-radius: 12px;
+}
+
+/* Truth Section */
+.truth-section {
+  background: var(--bordo);
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.truth-section h2 {
+  font-family: var(--sans);
+  color: var(--bege);
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Problems Section */
+.problems-section {
+  background: var(--white);
+  padding: 80px 40px;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  line-height: 1.2;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  background: linear-gradient(45deg, #211515 0%, #540b14 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 48px;
+  color: var(--preto-fundo);
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+  /*margin-bottom: 40px;*/
+}
+
+.problems-grid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #540b14;
+}
+
+.problem-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.problem-icon {
+  color: var(--bordo);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.problem-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.highlight-box {
+  background: white;
+  border-left: 4px solid var(--rose);
+  padding: 32px 40px;
+  margin-top: 48px;
+  border-radius: 8px;
+}
+
+.highlight-box p {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+.highlight-text {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 80px 40px;
+  background: white;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.benefit-item {
+  margin-bottom: 40px;
+}
+
+.benefit-title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.benefit-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.benefits-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Quote Section */
+.quote-section {
+  background: var(--burgundy);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.quote-section h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.quote-section h3 strong {
+  font-weight: 700;
+}
+
+/* System Section */
+.system-section {
+  padding: 80px 40px;
+  background: var(--cream);
+}
+
+.system-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.system-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.system-card:hover {
+  border-color: var(--rose);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(139, 46, 58, 0.1);
+}
+
+.system-card h4 {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--rose);
+  font-weight: 700;
+}
+
+/* Comparison Section */
+.comparison-section {
+  padding: 80px 40px;
+  background: white;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.comparison-card {
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+}
+
+.comparison-card.without {
+  background: #f8f8f8;
+}
+
+.comparison-card.with {
+  background: white;
+  border-color: var(--rose);
+}
+
+.comparison-title {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.comparison-title small {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.comparison-list {
+  list-style: none;
+}
+
+.comparison-list li {
+  padding: 12px 0;
+  padding-left: 32px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.comparison-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--rose);
+  font-weight: 700;
+}
+
+/* Included Section */
+.included-section {
+  padding: 80px 40px;
+  background: var(--burgundy);
+  color: white;
+}
+
+.included-section .section-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.included-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.included-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.included-check {
+  color: var(--rose);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.included-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.bonus-section {
+  margin-top: 56px;
+  padding-top: 56px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bonus-title {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 80px 40px;
+  background: var(--rose);
+  color: white;
+  text-align: center;
+}
+
+.price-old {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.price-new {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.price-installment {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.price-note {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-top: 24px;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 40px;
+  background: var(--cream);
+}
+
+.faq-item {
+  background: white;
+  padding: 32px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+}
+
+.faq-question {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--rose);
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* Footer */
+footer {
+  background: var(--burgundy);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .hero {
+    background-position: center center;
+  }
+
+  .hero-container,
+  .problems-grid,
+  .benefits-grid,
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero,
+  .problems-section,
+  .benefits-section,
+  .system-section,
+  .comparison-section,
+  .included-section,
+  .pricing-section,
+  .faq-section {
+    padding: 60px 20px;
+  }
+
+  .truth-section,
+  .quote-section {
+    padding: 15px 15px;
+  }
+}
