@@ -41,59 +41,57 @@
     <!-- Problems Section -->
     <section class="problems-section">
         <div class="container">
-            <h2 class="section-title">Vamos falar a verdade? O problema não é sua técnica. <br> É a falta de estrutura para transformá-la em negócio.</h2>
+            <h2 class="section-title-problem">Vamos falar a verdade? O problema não é sua técnica. <br> É a falta de estrutura para transformá-la em negócio.</h2>
 
             <div class="problems-grid">
                 <div class="problem-item">
-                    <span class="problem-icon">✗</span>
+                    <span class="problem-icon"></span>
                     <p class="problem-text">Você é boa no que faz, mas não sabe como se posicionar no mercado</p>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">✗</span>
+                    <span class="problem-icon"></span>
                     <p class="problem-text">Já tentou organizar sua clínica, mas tudo continua na sua cabeça</p>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">✗</span>
+                    <span class="problem-icon"></span>
                     <p class="problem-text">Consome muito conteúdo de marketing, mas não sabe o que aplicar primeiro</p>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">✗</span>
-                    <p class="problem-text">Atende muito e no fim do mês o dinheiro não reflete o esforço</p>
-                </div>
-                <div class="problem-item">
-                    <span class="problem-icon">✗</span>
+                    <span class="problem-icon"></span>
                     <p class="problem-text">Não sabe o que vem primeiro: postar, vender, organizar, precificar</p>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">✗</span>
-                    <p class="problem-text">Vive apagando incêndio sem conseguir crescer de verdade</p>
+                    <span class="problem-icon"></span>
+                    <p class="problem-text1">Vive apagando incêndio sem conseguir crescer de verdade</p>
                 </div>
                 <div class="problem-item">
-                    <span class="problem-icon">✗</span>
-                    <p class="problem-text">A agenda ora está cheia, ora está vazia — e você não sabe o motivo</p>
+                    <span class="problem-icon"></span>
+                    <p class="problem-text1">A agenda ora está cheia, ora está vazia e você não sabe o motivo</p>
                 </div>
             </div>
 
             <div class="highlight-box">
-                <p>A sensação constante é: <span class="highlight-text">"eu sei que posso mais, mas não sei como organizar isso."</span></p>
+                <p>A sensação constante é: "eu sei que posso mais, mas não sei como organizar isso."</p>
             </div>
 
-            <p class="section-intro" style="margin-top: 48px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p class="section-intro" style="margin-top: 10px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
                 Esse planner foi criado pra doutora que quer parar de improvisar e começar a construir com método. <strong>Aqui, sua clínica vira negócio. Seu negócio vira marca. Sua marca vira independência.</strong>
             </p>
         </div>
     </section>
 
+    <hr class="bordo-divider">
+
     <!-- Benefits Section -->
     <section class="benefits-section">
         <div class="container">
-            <h2 class="section-title">Com o Minha Clínica Organizada® você vai:</h2>
+            <h2 class="section-title-benefit">Com o Minha Clínica Organizada® você vai:</h2>
 
             <div class="benefits-grid">
                 <div>
                     <div class="benefit-item">
                         <h3 class="benefit-title">Definir quem você é no mercado de estética</h3>
-                        <p class="benefit-desc">Você entende qual é o seu posicionamento, pra quem você atende e por que a paciente certa te escolhe.</p>
+                        <p class="benefit-desc"> Definir quem você é no mercado de estética você entende qual é o seu posicionamento, pra quem você atende e por que a paciente certa te escolhe.</p>
                     </div>
 
                     <div class="benefit-item">
@@ -124,7 +122,7 @@
 
                 <div class="benefits-image">
                     <div class="image-placeholder">
-                        [Imagem do laptop com o planner]
+                        <!--colocar o mockup do notebook aqui-->
                     </div>
                 </div>
             </div>
@@ -135,84 +133,125 @@
         </div>
     </section>
 
-    <!-- Quote Section -->
-    <section class="quote-section">
-        <h3><strong>Ideia sem organização não vira negócio. Vira frustração.</strong><br>Técnica sem posicionamento não vira autoridade. Vira commoditie.</h3>
-    </section>
-
     <!-- System Section -->
     <section class="system-section">
         <div class="container">
-            <h2 class="section-title">O Minha Clínica Organizada® é um sistema completo no Notion</h2>
-            <p class="section-intro">
-                Para doutoras que querem sair do modo "sobrevivência" e construir uma clínica com posicionamento, gestão e vendas — mesmo começando do zero ou reorganizando o que já existe.
+            <h2 class="section-title">
+                Ideia sem organização não vira negócio. Vira frustração. Técnica sem posicionamento não vira autoridade. Vira commoditie.
+            </h2>
+            <p class="section-intro-org">
+                O Minha Clínica Organizada® é um sistema completo no Notion para doutoras que querem sair do modo "sobrevivência" e construir uma clínica com posicionamento, gestão e vendas — mesmo começando do zero ou reorganizando o que já existe.
             </p>
-            <p class="section-intro">
+            <p class="section-intro-org">
                 Aqui você não encontra teoria solta. Você encontra estrutura prática, organizada por área, para executar de verdade.
             </p>
 
-            <div class="system-grid">
-                <div class="system-card">
-                    <h4>DNA DIGITAL & POSICIONAMENTO</h4>
+            <!-- Carrossel -->
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <img src="assets/carrossel.png" alt="DNA Digital & Posicionamento">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/carrossel.png" alt="Vendas & Estratégias">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/carrossel.png" alt="Marketing">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/carrosselz.png" alt="Gestão & Processos">
+                        </div>
+                    </div>
                 </div>
-                <div class="system-card">
-                    <h4>MARKETING & REDES SOCIAIS</h4>
-                </div>
-                <div class="system-card">
-                    <h4>VENDAS & ESTRATÉGIAS</h4>
-                </div>
-                <div class="system-card">
-                    <h4>GESTÃO & PROCESSOS</h4>
-                </div>
-                <div class="system-card">
-                    <h4>FINANÇAS</h4>
-                </div>
-                <div class="system-card">
-                    <h4>JURÍDICO</h4>
-                </div>
+
+                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
             </div>
 
             <div style="text-align: center; margin-top: 56px;">
                 <a href="#preco" class="cta-button">Quero organizar minha clínica agora</a>
             </div>
+        </div>
+    </section>
 
-            <p style="text-align: center; margin-top: 48px; font-size: 1.1rem; line-height: 1.7;">
-                <strong>Esse planner funciona como o mapa da sua clínica, mesmo que você esteja começando sozinha ou alugando sala.</strong>
+    <hr class="white-divider">
+
+    <!-- Módulos Section -->
+    <section class="modules-section">
+        <div class="container">
+            <p class="modules-intro">
+                Esse planner funciona como o mapa da sua clínica, mesmo que você esteja começando sozinha ou alugando sala.
             </p>
 
-            <p style="text-align: center; margin-top: 32px; font-size: 1rem; color: var(--text-muted);">
-                Um sistema simples, visual e pronto para usar desde o primeiro dia. Totalmente personalizável e responsivo.<br>
-                Adapte à sua identidade, escolha o tema que preferir e acesse de qualquer dispositivo — computador, tablet ou celular.
-            </p>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">👤</div>
+                    <h4 class="module-title">DNA DIGITAL &<br>POSICIONAMENTO</h4>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">📱</div>
+                    <h4 class="module-title">MARKETING &<br>REDES SOCIAIS</h4>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">🎯</div>
+                    <h4 class="module-title">VENDAS &<br>ESTRATÉGIAS</h4>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">⚙️</div>
+                    <h4 class="module-title">GESTÃO &<br>PROCESSOS</h4>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">📊</div>
+                    <h4 class="module-title">FINANÇAS</h4>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">⚖️</div>
+                    <h4 class="module-title">JURÍDICO</h4>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Comparison Section -->
     <section class="comparison-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 56px;">Tudo que você precisa para organizar sua clínica em um só lugar.</h2>
+            <div class="comparison-header">
+                <div class="comparison-intro">
+                    <p>Tudo que você precisa para<br>organizar sua clínica está em<br>um só lugar</p>
+                </div>
+            </div>
 
             <div class="comparison-grid">
                 <div class="comparison-card without">
-                    <h3 class="comparison-title">Sem o Planner <small>(sem julgamento, mas real)</small></h3>
+                    <h3 class="comparison-title">Sem o Planner</h3>
                     <ul class="comparison-list">
-                        <li>Agenda instável — cheia um mês, vazia no outro</li>
-                        <li>Sempre perde datas importantes por falta de organização</li>
-                        <li>Trabalha muito mas o dinheiro não é o suficiente</li>
-                        <li>Não tem processo (tudo depende de você e da sua memória)</li>
-                        <li>Posta sem estratégia e não vê resultado</li>
-                        <li>Sente que poderia mais, mas não sabe por onde começar</li>
+                        <li>Usa diversas planilhas e ferramentas diferentes (nada conversa entre si)</li>
+                        <li>Tudo fica na cabeça — falta sistema e processo claro</li>
+                        <li>Não sabe o que postar, quando vender ou como reativar</li>
+                        <li>Agenda instável e você não sabe o motivo</li>
+                        <li>Trabalha muito, mas o dinheiro não reflete o esforço</li>
                     </ul>
+                    <div class="comparison-mockup">
+                        <img src="assets/mockup-celulares.png" alt="Múltiplas ferramentas desorganizadas">
+                    </div>
                 </div>
 
                 <div class="comparison-card with">
-                    <h3 class="comparison-title">Com o Planner <small>(transformação)</small></h3>
+                    <h3 class="comparison-title">Com o Planner</h3>
                     <ul class="comparison-list">
-                        <li>Você tem posicionamento claro — a paciente certa te encontra</li>
-                        <li>Sabe exatamente o que fazer quando a agenda trava</li>
-                        <li>Processos documentados — sua clínica funciona com ou sem você</li>
-                        <li>Conteúdo e vendas com intenção — não mais no achismo</li>
-                        <li>Constrói uma clínica com visão de longo prazo e independência financeira</li>
+                        <li>POSICIONAMENTO<br><span>Você sabe quem é, pra quem atende e como se diferencia no mercado</span></li>
+                        <li>MARKETING<br><span>Calendário de conteúdo pronto e campanhas sazonais organizadas</span></li>
+                        <li>VENDAS<br><span>Processo de vendas documentado + estratégias de reativação</span></li>
+                        <li>GESTÃO<br><span>Processos, equipe e atendimento estruturados do início ao fim</span></li>
+                        <li>FINANÇAS<br><span>Controle financeiro simples — você vê onde está perdendo ou ganhando</span></li>
+                        <li>JURÍDICO<br><span>Checklist completo de documentos e licenças que toda clínica precisa</span></li>
                     </ul>
                 </div>
             </div>
@@ -226,125 +265,143 @@
     <!-- Included Section -->
     <section class="included-section">
         <div class="container">
-            <h2 class="section-title">Acesso vitalício. Entrega imediata. Transformação acessível.</h2>
-            <p style="text-align: center; margin-bottom: 56px; font-size: 1.1rem; opacity: 0.95;">
+            <h2 class="section-title">Tudo que você precisa para organizar sua clínica em um só lugar.</h2>
+            <p class="section-subtitle">
                 Com o Minha Clínica Organizada®, você leva um sistema completo no Notion para organizar sua clínica do zero — ou reorganizar o que já existe mas funciona no improviso — sem precisar fazer vários cursos ou usar mil ferramentas diferentes.
             </p>
 
-            <div class="included-list">
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Um método passo a passo para construir o DNA da sua marca como doutora</p>
+            <div class="included-grid">
+                <!-- Coluna Esquerda - Lista -->
+                <div class="included-left">
+                    <h3 class="included-subtitle">Você terá acesso a:</h3>
+                    <ul class="included-list">
+                        <li>Um método passo a passo para construir o DNA da sua marca como doutora</li>
+                        <li>Estratégias de marketing e vendas específicas para clínicas de estética</li>
+                        <li>Processo completo de atendimento — do primeiro contato ao pós-procedimento</li>
+                        <li>Planejamento de conteúdo e campanhas sazonais com o calendário anual</li>
+                        <li>Controle financeiro sem planilha complicada</li>
+                        <li>Base de pacientes organizada para reativação e fidelização constante</li>
+                        <li>Estrutura jurídica — documentos, licenças e termos que toda clínica precisa</li>
+                        <li>Um sistema que te mostra o que fazer, como fazer e quando fazer</li>
+                    </ul>
                 </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Estratégias de marketing e vendas específicas para clínicas de estética</p>
-                </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Processo completo de atendimento — do primeiro contato ao pós-procedimento</p>
-                </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Planejamento de conteúdo e campanhas sazonais com o calendário anual</p>
-                </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Controle financeiro sem planilha complicada</p>
-                </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Base de pacientes organizada para reativação e fidelização constante</p>
-                </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Estrutura jurídica — documentos, licenças e termos que toda clínica precisa</p>
-                </div>
-                <div class="included-item">
-                    <span class="included-check">✓</span>
-                    <p class="included-text">Um sistema que te mostra o que fazer, como fazer e quando fazer</p>
+
+                <!-- Coluna Direita - Preço e CTA -->
+                <div class="included-right">
+                    <div class="price-box">
+                        <p class="price-intro">O planner personalizado que você escolheu incluir no seu planner:</p>
+
+                        <div class="price-highlight">
+                            <p class="price-label">Ao investir:</p>
+                            <p class="price-text">Por menos de:</p>
+                            <p class="price-value">R$ 77,00</p>
+                            <p class="price-installment">ou 12x de R$ 6,41</p>
+                        </div>
+
+                        <a href="#preco" class="cta-button">QUERO ORGANIZAR MINHA CLÍNICA AGORA</a>
+
+                        <div class="product-mockup">
+                            <img src="assets/mockup-devices.png" alt="Mockup do planner em dispositivos">
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Bônus -->
             <div class="bonus-section">
                 <h3 class="bonus-title">E ainda...</h3>
-                <div class="included-list">
-                    <div class="included-item">
-                        <span class="included-check">🎁</span>
-                        <p class="included-text"><strong>Bônus — Campanhas sazonais de vendas para clínicas</strong></p>
+                <div class="bonus-grid">
+                    <div class="bonus-item">
+                        <h4>Bônus — Campanhas sazonais de vendas para clínicas</h4>
                     </div>
-                    <div class="included-item">
-                        <span class="included-check">🎁</span>
-                        <p class="included-text"><strong>Bônus — Guia de Ações de Vendas para Clínica</strong> - estratégias prontas pra quando a agenda travar e você precisar de agendamento rápido.</p>
+                    <div class="bonus-item">
+                        <h4>Bônus — Guia de Ações de Vendas para Clínica</h4>
+                        <p>estratégias prontas pra quando a agenda travar e você precisar de agendamento rápido.</p>
                     </div>
-                    <div class="included-item">
-                        <span class="included-check">🎁</span>
-                        <p class="included-text"><strong>Bônus - Script de Vendas para Secretária</strong> - Como conduzir do atendimento ao agendamento e estratégias de follow up</p>
+                    <div class="bonus-item">
+                        <h4>Bônus - Script de Vendas para Secretária</h4>
+                        <p>Como conduzir do atendimento ao agendamento e estratégias de follow up</p>
                     </div>
                 </div>
             </div>
-
-            <p style="text-align: center; margin-top: 56px; font-size: 1.2rem; font-weight: 600;">
-                Tudo isso por menos do que um procedimento que você realiza toda semana.
-            </p>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section" id="preco">
-        <div class="container">
-            <p class="price-old">De R$597</p>
-            <div class="price-installment">Por apenas</div>
-            <div class="price-new">12x de R$6,41</div>
-            <div class="price-installment">ou R$77,00 à vista</div>
-
-            <a href="#" class="cta-button" style="background: white; color: var(--rose); border-color: white;">→ Quero organizar minha clínica agora</a>
-
-            <p class="price-note">Sem mensalidade. Acesso imediato.</p>
         </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 56px;">FAQ</h2>
+            <h2 class="section-title-faq" style="text-align: center; margin-bottom: 56px;">FAQ</h2>
 
-            <div class="faq-item">
-                <h4 class="faq-question">O acesso é imediato?</h4>
-                <p class="faq-answer">Sim. Assim que o pagamento é confirmado, você recebe o link de acesso no Notion na hora.</p>
-            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        O acesso é imediato?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Assim que o pagamento é confirmado, você recebe o link de acesso no Notion na hora.</p>
+                    </div>
+                </div>
 
-            <div class="faq-item">
-                <h4 class="faq-question">Eu preciso saber usar o Notion?</h4>
-                <p class="faq-answer">Não. O planner já vem pronto e configurado. Você só precisa preencher. Se tiver alguma dúvida, tem orientações dentro do próprio planner.</p>
-            </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Eu preciso saber usar o Notion?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não. O planner já vem pronto e configurado. Você só precisa preencher. Se tiver alguma dúvida, tem orientações dentro do próprio planner.</p>
+                    </div>
+                </div>
 
-            <div class="faq-item">
-                <h4 class="faq-question">Funciona no celular?</h4>
-                <p class="faq-answer">Sim. O Notion funciona em computador, tablet e celular. Você acessa de qualquer lugar.</p>
-            </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Funciona no celular?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. O Notion funciona em computador, tablet e celular. Você acessa de qualquer lugar.</p>
+                    </div>
+                </div>
 
-            <div class="faq-item">
-                <h4 class="faq-question">Posso usar mesmo se ainda não tenho espaço próprio e alugo sala?</h4>
-                <p class="faq-answer">Sim. O planner foi criado justamente pra quem está começando — alugando sala, construindo carteira e estruturando a carreira.</p>
-            </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Posso usar mesmo se ainda não tenho espaço próprio e alugo sala?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. O planner foi criado justamente pra quem está começando, alugando sala, construindo carteira e estruturando a carreira.</p>
+                    </div>
+                </div>
 
-            <div class="faq-item">
-                <h4 class="faq-question">Por que o preço é tão acessível?</h4>
-                <p class="faq-answer">Porque acreditamos que organização não deve ser privilégio de quem já chegou. É o que te leva até lá.</p>
-            </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Por que o preço é tão acessível?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Porque acreditamos que organização não deve ser privilégio de quem já chegou. É o que te leva até lá.</p>
+                    </div>
+                </div>
 
-            <div class="faq-item">
-                <h4 class="faq-question">Tenho suporte?</h4>
-                <p class="faq-answer">Sim. Qualquer dúvida sobre o planner, você pode entrar em contato pelo suporte indicado após a compra.</p>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        Tenho suporte?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Qualquer dúvida sobre o planner, você pode entrar em contato pelo suporte indicado após a compra.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Minha Clínica Organizada® © 2025 | Todos os direitos reservados</p>
+        <p>Minha Clínica Organizada® © 2026 | Todos os direitos reservados</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
