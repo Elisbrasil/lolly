@@ -2,19 +2,23 @@ let currentSlide = 0;
 const track = document.getElementById("carouselTrack");
 const slides = document.querySelectorAll(".carousel-slide");
 const totalSlides = slides.length;
+const slidesToShow = 2;
 
 function moveCarousel(direction) {
   currentSlide += direction;
+
+  const maxSlideIndex = totalSlides - slidesToShow;
 
   if (currentSlide < 0) {
     currentSlide = totalSlides - 1;
   } else if (currentSlide >= totalSlides) {
     currentSlide = 0;
   }
-
-  const offset = -currentSlide * 100;
+  const slideWidht = 100 / slidesToShow;
+  const offset = -currentSlide * slideWidht;
   track.style.transform = `translateX(${offset}%)`;
 }
+
 function toggleFAQ(button) {
   const faqItem = button.parentElement;
   const answer = faqItem.querySelector(".faq-answer");
