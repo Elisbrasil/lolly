@@ -5,8 +5,8 @@
   --bege: #ccc0b2;
   --text-dark: #1a1a1a;
   --text-muted: #666;
-  --serif: "Playfair Display", serif;
-  --sans: "Montserrat", sans-serif;
+  --serif: "Impact", sans-serif;
+  --sans: "Roboto", sans-serif;
 }
 * * {
   margin: 0;
@@ -85,25 +85,23 @@ body {
   color: var(--white);
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   margin-bottom: 24px;
   font-weight: 700;
-
-  background: linear-gradient(90deg, #e0dbd7 26%, #540b14 93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .hero-subtitle {
+  font-family: var(--sans);
   font-size: 1.25rem;
   line-height: 1.7;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   opacity: 0.95;
 }
 
 .hero-price {
   font-family: var(--sans);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin-bottom: 32px;
   opacity: 0.95;
 }
@@ -160,18 +158,15 @@ body {
 .section-title-problem {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
+  color: #620a1a;
   line-height: 1.2;
-  margin-bottom: 24px;
+  letter-spacing: 0.02em;
   font-weight: 700;
   text-align: center;
-
-  background: linear-gradient(45deg, #211515 0%, #540b14 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .section-intro {
+  font-family: var(--sans);
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 48px;
@@ -182,7 +177,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .problem-item {
@@ -201,6 +196,7 @@ body {
 }
 
 .problem-text {
+  font-family: var(--sans);
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.6;
@@ -231,12 +227,12 @@ body {
 }
 
 .highlight-box p {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-weight: 700;
   font-size: 1.3rem;
   line-height: 1.5;
   text-align: center;
-  color: var(--bordo);
+  color: #620a1a;
 
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(
@@ -259,15 +255,11 @@ body {
 .section-title-benefit {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
+  color: #620a1a;
   line-height: 1.2;
   margin-bottom: 24px;
   font-weight: 700;
   text-align: left;
-
-  background: linear-gradient(45deg, #211515 0%, #875656 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .benefits-grid > div {
@@ -309,6 +301,7 @@ body {
 
 .benefit-desc {
   font-size: 1.2rem;
+  font-family: var(--sans);
   line-height: 1.7;
   color: var(--text-muted);
 }
@@ -683,33 +676,37 @@ body {
 }
 .price-box {
   background: var(--creme);
-  padding: 40px;
+  padding: 80px 25px;
   border-radius: 24px;
-  border: 16px solid rgba(224, 219, 215, 0.5);
-  border-image: linear-gradient(360deg, #e0dbd7 0%, #ccc0b2 100%) 1;
+  border: 8px solid #e0dbd7;
   margin-top: 90px;
+  box-shadow: 0 20px 60px rgba(224, 219, 215, 0.5);
 }
 
 .price-intro {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
-  color: var(--text-muted);
+  color: var(--preto-fundo);
   margin-bottom: 24px;
   line-height: 1.6;
 }
 
 .price-highlight {
   background: var(--creme);
-  padding: 28px;
   border-radius: 12px;
   margin-bottom: 28px;
   text-align: center;
 }
 
 .price-label {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 8px;
+}
+.price-label span {
+  text-decoration: line-through;
+  color: var(--bordo);
+  margin-left: 8px;
 }
 
 .price-text {
@@ -719,9 +716,8 @@ body {
 }
 
 .price-value {
-  font-family: var(--serif);
-  font-size: 2.5rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 800;
   color: var(--burgundy);
   line-height: 1;
   margin-bottom: 8px;
@@ -732,6 +728,24 @@ body {
   color: var(--text-dark);
 }
 
+.cta-button-acesso {
+  display: inline-block;
+  background: var(--bege);
+  color: var(--preto-fundo);
+  padding: 12px 48px;
+  border-radius: 8px;
+  font-size: clamp(1.25rem, 4vw, 1rem);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 2px;
+}
+.price-info {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
 .product-mockup img {
   max-width: 100%;
   height: auto;
@@ -748,8 +762,9 @@ body {
   font-family: var(--serif);
   font-size: 1.8rem;
   text-align: center;
+  letter-spacing: 0.02em;
   margin-bottom: 40px;
-  color: var(--burgundy);
+  color: #620a1a;
 }
 
 .bonus-grid {
@@ -782,9 +797,10 @@ body {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
   line-height: 1.2;
+  letter-spacing: 0.05em;
   margin-bottom: 24px;
-  font-weight: 700;
-  color: #211515;
+  font-weight: 500;
+  color: #620a1a;
 }
 
 .faq-grid {
@@ -796,7 +812,7 @@ body {
 }
 
 .faq-item {
-  background: white;
+  /*background: white;*/
   border-radius: 10px;
   overflow: hidden;
   border: 1px groove #bebebe;
@@ -806,7 +822,7 @@ body {
 .faq-question {
   width: 100%;
   padding: 20px 24px;
-  background: white;
+  background: var(--creme);
   border: none;
   text-align: left;
   font-size: 1rem;
@@ -836,7 +852,6 @@ body {
   transition:
     max-height 0.3s ease,
     padding 0.3s ease;
-  background: #f9f9f9;
 }
 
 .faq-answer.open {
@@ -853,7 +868,7 @@ body {
 
 /* Footer */
 footer {
-  background: var(--bordo);
+  background: #620a1a;
   color: white;
   padding: 20px;
   text-align: center;
