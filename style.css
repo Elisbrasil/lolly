@@ -135,6 +135,7 @@ body {
 .section-title-problem {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
+  text-transform: uppercase;
   color: var(--bege);
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -226,6 +227,7 @@ body {
 .section-title-benefit {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
+  text-transform: uppercase;
   color: #620a1a;
   line-height: 1.2;
   margin-bottom: 24px;
@@ -295,6 +297,7 @@ body {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 4vw, 2.25rem);
   font-weight: 500;
+  text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -373,6 +376,7 @@ body {
   font-weight: 500;
   text-align: center;
   font-size: clamp(1.5rem, 3vw, 2rem);
+  text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 56px;
   max-width: 700px;
@@ -452,6 +456,7 @@ body {
   color: var(--bege);
   font-family: var(--serif);
   font-size: clamp(2rem, 4vw, 3rem);
+  text-transform: uppercase;
   line-height: 1.2;
   font-weight: 500;
   text-align: left;
