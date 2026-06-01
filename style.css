@@ -8,7 +8,8 @@
   --serif: "Impact", sans-serif;
   --sans: "Roboto", sans-serif;
 }
-* * {
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +28,7 @@ body {
   padding: 0 40px;
 }
 
-/*divider*/
+/* divider */
 .bordo-divider {
   height: 4px;
   background: var(--bordo);
@@ -35,7 +36,7 @@ body {
   margin: 0;
 }
 
-/* Hero Section */
+/* ===================== HERO ===================== */
 .hero {
   background: url(assets/hero.png);
   background-size: cover;
@@ -44,6 +45,7 @@ body {
   padding: 80px 40px 100px;
   position: relative;
 }
+
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,89 +54,103 @@ body {
   gap: 60px;
   align-items: center;
 }
-.logo img {
-  height: auto;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
+
 .logo-image {
-  max-width: clamp(75px, 20%, 100px);
+  max-width: clamp(60px, 15vw, 100px);
   height: auto;
 }
+
 .logo-text {
-  max-width: clamp(100px, 20%, 175px);
+  max-width: clamp(90px, 18vw, 175px);
   height: auto;
 }
+
 .hero-content h1 {
   font-family: var(--serif);
   color: var(--white);
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 3rem);
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 24px;
   font-weight: 600;
 }
+
 .hero-subtitle {
   font-family: var(--sans);
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.7;
   margin-bottom: 20px;
   opacity: 0.95;
+  color: var(--bege);
 }
+
 .hero-price {
   font-family: var(--sans);
-  font-size: 1.25rem;
+  color: var(--bege);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: 32px;
   opacity: 0.95;
 }
+
 .cta-button {
   display: inline-block;
   background: #ccc0b2;
   color: var(--preto-fundo);
-  padding: 12px 48px;
+  padding: 12px 32px;
   border-radius: 8px;
-  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  border: 2px;
 }
+
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .hero-image img {
   max-width: 100%;
   height: auto;
-  margin-left: 30px;
   border-radius: 12px;
 }
 
-/* Truth Section */
+/* ===================== TRUTH ===================== */
 .truth-section {
   background: #000000;
-  padding: 15px 15px;
+  padding: 15px 20px;
   text-align: center;
 }
+
 .truth-section h2 {
   font-family: var(--sans);
   color: var(--bege);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.4;
 }
 
-/* Problems Section */
+/* ===================== PROBLEMS ===================== */
 .problems-section {
   background: var(--bordo);
   padding: 80px 40px;
 }
+
 .section-title-problem {
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.25rem);
   text-transform: uppercase;
   color: var(--bege);
   line-height: 1.2;
@@ -142,6 +158,7 @@ body {
   font-weight: 500;
   text-align: center;
 }
+
 .section-intro {
   font-family: var(--sans);
   font-size: 1.1rem;
@@ -149,32 +166,36 @@ body {
   margin-bottom: 48px;
   color: var(--bege);
 }
+
 .problems-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   margin-top: 80px;
 }
+
 .problem-item {
   display: flex;
   gap: 16px;
   align-items: flex-start;
 }
+
 .problem-icon {
   width: 10px;
   height: 10px;
+  min-width: 10px;
   background: var(--bege);
   border-radius: 50%;
   flex-shrink: 0;
   margin-top: 8px;
 }
+
 .problem-text {
   font-family: var(--sans);
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 500;
   line-height: 1.6;
   color: var(--bege);
-
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(
       90deg,
@@ -185,26 +206,28 @@ body {
     1;
   padding-bottom: 24px;
 }
+
 .problem-text1 {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 500;
   line-height: 1.6;
   color: var(--bege);
 }
+
 .highlight-box {
   background: var(--bordo);
   padding: 32px 40px;
   margin-top: 60px;
   border-radius: 8px;
 }
+
 .highlight-box p {
   font-family: var(--sans);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   line-height: 1.5;
   text-align: center;
   color: var(--bege);
-
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(
       90deg,
@@ -216,7 +239,7 @@ body {
   padding-bottom: 24px;
 }
 
-/* Benefits Section */
+/* ===================== BENEFITS ===================== */
 .benefits-section {
   background: url(assets/benefits.png);
   background-size: cover;
@@ -224,9 +247,10 @@ body {
   background-repeat: no-repeat;
   padding: 80px 40px;
 }
+
 .section-title-benefit {
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.25rem);
   text-transform: uppercase;
   color: #620a1a;
   line-height: 1.2;
@@ -234,10 +258,20 @@ body {
   font-weight: 500;
   text-align: left;
 }
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 48px;
+}
+
 .benefits-grid > div {
   position: relative;
   padding-left: 24px;
 }
+
 .benefits-grid > div::before {
   content: "";
   position: absolute;
@@ -247,17 +281,12 @@ body {
   width: 2px;
   background-color: #670003;
 }
-.benefits-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  margin-top: 48px;
-}
+
 .benefit-item {
   position: relative;
   margin-bottom: 27px;
 }
+
 .benefit-item::before {
   content: "";
   position: absolute;
@@ -268,34 +297,36 @@ body {
   border-radius: 50%;
   background-color: #670003;
 }
+
 .benefit-desc {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   font-family: var(--sans);
   line-height: 1.7;
   color: var(--text-muted);
 }
+
 .cta-button-benefits {
   display: inline-block;
   background: var(--bordo);
   color: var(--bege);
-  padding: 12px 48px;
+  padding: 12px 32px;
   border-radius: 8px;
-  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  border: 2px;
 }
 
-/* System Section */
+/* ===================== SYSTEM ===================== */
 .system-section {
   padding: 80px 40px;
   background: var(--bege);
 }
+
 .section-title-system {
   color: var(--bordo);
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.25rem);
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1.2;
@@ -303,29 +334,34 @@ body {
   text-align: center;
   margin-bottom: 48px;
 }
+
 .section-intro-org {
   color: var(--bordo);
   font-family: var(--sans);
   text-align: center;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   line-height: 1.7;
   margin-bottom: 10px;
 }
+
 .carousel-container {
   position: relative;
   max-width: 1000px;
   margin: 56px auto;
   padding: 0 60px;
 }
+
 .carousel-wrapper {
   overflow: hidden;
   border-radius: 16px;
 }
+
 .carousel-track {
   display: flex;
   transition: transform 0.4s ease;
   gap: 20px;
 }
+
 .carousel-slide {
   min-width: calc(50% - 10px);
   flex-shrink: 0;
@@ -333,12 +369,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .carousel-slide img {
   max-width: 400px;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -354,28 +393,32 @@ body {
   transition: all 0.3s;
   z-index: 10;
 }
+
 .carousel-btn:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-50%) scale(1.1);
 }
+
 .carousel-btn.prev {
   left: 0;
 }
+
 .carousel-btn.next {
   right: 0;
 }
 
-/*modulos*/
+/* ===================== MÓDULOS ===================== */
 .modules-section {
   background: var(--bordo);
   padding: 80px 40px;
 }
+
 .modules-intro {
   color: var(--bege);
   font-family: var(--serif);
   font-weight: 500;
   text-align: center;
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
   text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 56px;
@@ -383,6 +426,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .modules-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -390,6 +434,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
+
 .module-card {
   background: #d4cec8;
   padding: 40px 32px;
@@ -403,10 +448,12 @@ body {
   justify-content: center;
   gap: 16px;
 }
+
 .module-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
+
 .module-icon {
   width: 48px;
   height: 48px;
@@ -415,12 +462,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .module-icon svg {
   width: 100%;
   height: 100%;
   stroke: var(--bordo);
   stroke-width: 1.5;
 }
+
 .module-title {
   font-family: var(--sans);
   font-size: 0.85rem;
@@ -431,12 +480,13 @@ body {
   line-height: 1.4;
 }
 
-/* Comparison Section */
+/* ===================== COMPARISON ===================== */
 .comparison-section {
   background: url(assets/comparison.png) center/cover;
   position: relative;
   padding: 100px 40px;
 }
+
 .comparison-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -446,62 +496,66 @@ body {
   align-items: start;
 }
 
-/* LADO ESQUERDO */
 .comparison-left {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
 .comparison-title {
   color: var(--bege);
   font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.6rem, 3.5vw, 3rem);
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 500;
   text-align: left;
   max-width: 600px;
 }
+
 .comparison-description {
   color: var(--bege);
   font-family: var(--sans);
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   line-height: 1.7;
   max-width: 600px;
   text-align: left;
 }
+
 .comparison-mockup {
   margin: 20px 0;
 }
+
 .comparison-mockup img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
 }
+
 .cta-button-comparison {
   display: inline-block;
   background: #ccc0b2;
   color: var(--preto-fundo);
-  padding: 12px 48px;
+  padding: 12px 32px;
   border-radius: 8px;
-  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  border: 2px;
   max-width: fit-content;
 }
 
-/* LADO DIREITO */
 .comparison-right {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
 .comparison-card {
   padding: 32px;
   border-radius: 16px;
 }
+
 .comparison-card.without {
   background: #a31e21;
   color: var(--bege);
@@ -509,6 +563,7 @@ body {
   max-width: 500px;
   margin-left: 13px;
 }
+
 .comparison-card.with {
   background: #d4cec8;
   color: var(--text-dark);
@@ -516,22 +571,25 @@ body {
   margin-top: -30px;
   z-index: 2;
 }
+
 .card-title-c {
   color: var(--bege);
   font-family: var(--serif);
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
   font-weight: 500;
   text-align: center;
   margin-bottom: 8px;
 }
+
 .card-title-s {
   color: #000000;
   font-family: var(--serif);
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
   font-weight: 500;
   text-align: center;
   margin-bottom: 8px;
 }
+
 .card-subtitle {
   font-size: 0.9rem;
   opacity: 0.7;
@@ -539,17 +597,20 @@ body {
   font-style: italic;
   text-align: center;
 }
+
 .card-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .card-list li {
   padding: 10px 0 10px 24px;
   position: relative;
   line-height: 1.6;
   font-size: 0.95rem;
 }
+
 .card-list li::before {
   content: "•";
   position: absolute;
@@ -557,36 +618,48 @@ body {
   font-weight: 700;
   font-size: 1.2rem;
 }
+
 .comparison-card.without .card-list li::before {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .comparison-card.with .card-list li::before {
-  color: var(--burgundy);
+  color: var(--bordo);
 }
 
-/* Included Section */
+/* ===================== INCLUDED ===================== */
 .included-section {
   background: var(--bege);
   padding: 100px 40px;
 }
+
 .section-title-included {
   color: var(--bordo);
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
   font-weight: 500;
   text-align: center;
   margin-bottom: 24px;
   line-height: 1.2;
 }
+
 .section-subtitle {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 400;
   line-height: 1.5;
   color: var(--preto-fundo);
   max-width: 900px;
   margin: 0 auto 64px;
 }
+
+.included-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .included-left {
   background: var(--bordo);
   padding: 40px;
@@ -594,35 +667,33 @@ body {
   border: 2px solid #e0dbd7;
   box-shadow: 0 20px 60px rgba(163, 30, 33, 0.15);
   max-width: 600px;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
 }
-.included-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 .included-subtitle {
   color: var(--bege);
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   margin-bottom: 24px;
   font-weight: 500;
 }
+
 .included-list {
   list-style: none;
 }
+
 .included-list li {
   padding: 12px 0 12px 32px;
   position: relative;
   line-height: 1.7;
   text-align: left;
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
   color: var(--bege);
-  max-width: 400px;
 }
+
 .included-list li::before {
   content: "✓";
   position: absolute;
@@ -631,116 +702,131 @@ body {
   font-weight: 700;
   font-size: 1.2rem;
 }
+
 .included-right {
   margin-left: -18px;
 }
+
 .price-box {
   background: var(--white);
-  padding: 80px 25px;
+  padding: 60px 25px;
   margin-top: 90px;
   border-radius: 12px;
   border: 2px solid #e0dbd7;
   max-width: 600px;
 }
+
 .price-intro {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
   font-family: var(--sans);
   color: var(--preto-fundo);
   margin-bottom: 24px;
   line-height: 1.6;
   text-align: center;
   max-width: 450px;
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .price-highlight {
   background: var(--creme);
   border-radius: 12px;
   margin-bottom: 28px;
   text-align: center;
 }
+
 .price-label {
   font-size: 1rem;
   color: var(--text-muted);
   margin-bottom: 8px;
 }
+
 .price-label span {
   text-decoration: line-through;
   color: var(--bordo);
   margin-left: 8px;
 }
-.price-text {
-  font-size: 0.9rem;
-  color: var(--text-dark);
-  margin-bottom: 8px;
-}
+
 .price-value {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 800;
-  color: var(--burgundy);
+  color: var(--bordo);
   line-height: 1;
   margin-bottom: 8px;
 }
+
 .price-installment {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--text-dark);
 }
+
 .cta-button-acesso {
-  display: inline-block;
+  display: block;
   background: var(--bordo);
   color: var(--bege);
-  padding: 12px 48px;
+  padding: 14px 32px;
   border-radius: 8px;
-  font-size: clamp(1.25rem, 4vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  border: 2px;
-  margin-left: 40px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
 }
+
 .price-info {
   font-size: 0.9rem;
   text-align: center;
   color: var(--text-muted);
   margin-top: 12px;
 }
+
 .product-mockup img {
   max-width: 100%;
   height: auto;
   margin-top: -190px;
 }
+
+/* Bônus */
 .bonus-section {
   margin-top: 80px;
   padding-top: 60px;
   border-top: 2px solid rgba(139, 46, 58, 0.2);
 }
+
 .bonus-title {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   color: #620a1a;
 }
+
 .bonus-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
+
 .bonus-item {
   background: white;
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
+
 .bonus-item h4 {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--burgundy);
+  color: var(--bordo);
   margin-bottom: 12px;
   line-height: 1.4;
   text-align: center;
 }
+
 .bonus-item p {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -748,20 +834,22 @@ body {
   text-align: center;
 }
 
-/* FAQ Section */
+/* ===================== FAQ ===================== */
 .faq-section {
   background: #f0ebe6;
   padding: 100px 40px;
 }
+
 .section-title-faq {
   font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
   line-height: 1.2;
   letter-spacing: 0.05em;
   margin-bottom: 24px;
   font-weight: 500;
   color: #620a1a;
 }
+
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -769,20 +857,21 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .faq-item {
-  /*background: white;*/
   border-radius: 10px;
   overflow: hidden;
   border: 1px groove #bebebe;
   transition: all 0.3s;
 }
+
 .faq-question {
   width: 100%;
   padding: 20px 24px;
   background: var(--creme);
   border: none;
   text-align: left;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-weight: 600;
   color: #545454;
   cursor: pointer;
@@ -790,16 +879,21 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s;
+  gap: 12px;
 }
+
 .faq-icon {
   font-size: 1.5rem;
   font-weight: 300;
   color: #545454;
   transition: transform 0.3s;
+  flex-shrink: 0;
 }
+
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
 }
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -807,10 +901,12 @@ body {
     max-height 0.3s ease,
     padding 0.3s ease;
 }
+
 .faq-answer.open {
   max-height: 300px;
   padding: 20px 24px;
 }
+
 .faq-answer p {
   font-size: 0.95rem;
   line-height: 1.7;
@@ -818,7 +914,6 @@ body {
   margin: 0;
 }
 
-/* Footer */
 footer {
   background: var(--bordo);
   color: white;
@@ -827,45 +922,46 @@ footer {
   opacity: 0.9;
 }
 
-/* Responsive */
 @media (max-width: 968px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  /* Hero */
   .hero {
+    padding: 60px 24px 80px;
     background-position: center center;
   }
 
-  .hero-container,
-  .problems-grid,
-  .benefits-grid,
-  .comparison-grid {
+  .hero-container {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .system-grid {
-    grid-template-columns: 1fr;
+  .hero-image {
+    display: none; /* Esconde imagem secundária no tablet para não poluir */
   }
 
-  .container {
-    padding: 0 20px;
-  }
-
-  .hero,
+  /* Sections padding */
   .problems-section,
   .benefits-section,
   .system-section,
   .modules-section,
   .comparison-section,
   .included-section,
-  .pricing-section,
   .faq-section {
-    padding: 60px 20px;
+    padding: 60px 24px;
   }
 
-  .truth-section,
-  .quote-section {
-    padding: 15px 15px;
+  /* Problems */
+  .problems-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 48px;
   }
+
+  /* Benefits */
   .benefits-section {
-    padding: 60px 20px;
     background-size: auto;
     background-position: right center;
   }
@@ -890,22 +986,20 @@ footer {
   }
 
   .benefit-item::before {
-    left: -24px;
+    left: -4px;
   }
 
-  .section-title-benefit {
-    font-size: clamp(1.5rem, 3vw, 1.8rem);
-    margin-bottom: 20px;
+  /* Carousel */
+  .carousel-container {
+    padding: 0 48px;
   }
 
-  .benefit-desc {
-    font-size: 1rem;
-  }
   .carousel-slide {
     min-width: 100%;
   }
+
   .carousel-slide img {
-    max-width: 280px;
+    max-width: 320px;
   }
 
   .carousel-btn {
@@ -913,86 +1007,237 @@ footer {
     height: 40px;
     font-size: 1.5rem;
   }
-  .modules-section {
-    padding: 60px 20px;
-  }
 
+  /* Módulos */
   .modules-grid {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
 
   .module-card {
-    padding: 32px 20px;
+    padding: 28px 16px;
     min-height: 150px;
   }
 
-  .module-icon {
-    font-size: 2rem;
-  }
-
   .module-title {
-    font-size: 0.75rem;
-  }
-  .comparison-section {
-    padding: 80px 20px;
+    font-size: 0.78rem;
   }
 
+  /* Comparison */
   .comparison-layout {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .comparison-left {
-    order: 1;
+  .comparison-card.without,
+  .comparison-card.with {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
 
-  .comparison-right {
-    order: 2;
-  }
-  .included-section {
-    padding: 80px 20px;
-  }
-
+  /* Included */
   .included-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 0;
+  }
+
+  .included-left {
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .included-right {
+    margin-left: 0;
+  }
+
+  .price-box {
+    margin-top: 0;
+    border-radius: 0 0 12px 12px;
+    padding: 40px 24px;
+    max-width: 100%;
+  }
+
+  .product-mockup img {
+    margin-top: 24px;
+  }
+
+  /* Bonus */
+  .bonus-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* FAQ */
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 48px 16px 64px;
+  }
+
+  .cta-button,
+  .cta-button-benefits,
+  .cta-button-comparison,
+  .cta-button-acesso {
+    font-size: 1rem;
+    padding: 14px 24px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* Truth */
+  .truth-section {
+    padding: 20px 16px;
+  }
+
+  /* Problems */
+  .problems-section {
+    padding: 48px 16px;
+  }
+
+  .highlight-box {
+    padding: 24px 20px;
+  }
+
+  /* Benefits */
+  .benefits-section {
+    padding: 48px 16px;
+  }
+
+  .benefit-item {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+
+  .benefit-item::before {
+    width: 8px;
+    height: 8px;
+    left: -2px;
+  }
+
+  /* System */
+  .system-section {
+    padding: 48px 16px;
+  }
+
+  .carousel-container {
+    padding: 0 40px;
+    margin: 32px auto;
+  }
+
+  .carousel-slide img {
+    max-width: 240px;
+  }
+
+  .carousel-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+  }
+
+  /* Módulos */
+  .modules-section {
+    padding: 48px 16px;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .module-card {
+    padding: 20px 12px;
+    min-height: 130px;
+    gap: 8px;
+  }
+
+  .module-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 8px;
+  }
+
+  .module-title {
+    font-size: 0.7rem;
+  }
+
+  /* Comparison */
+  .comparison-section {
+    padding: 60px 16px;
+  }
+
+  .comparison-card {
+    padding: 24px 20px;
+  }
+
+  /* Included */
+  .included-section {
+    padding: 60px 16px;
+  }
+
+  .included-left {
+    padding: 28px 20px;
+  }
+
+  .included-list li {
+    max-width: 100%;
+    padding-left: 28px;
+  }
+
+  .price-box {
+    padding: 32px 16px;
+  }
+
+  .price-intro {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  /* Bonus */
+  .bonus-section {
+    margin-top: 48px;
+    padding-top: 40px;
   }
 
   .bonus-grid {
     grid-template-columns: 1fr;
   }
 
-  .price-box {
-    padding: 32px 24px;
+  .bonus-item {
+    padding: 24px 20px;
   }
 
-  .price-value {
-    font-size: 2rem;
-  }
+  /* FAQ */
   .faq-section {
-    padding: 80px 20px;
+    padding: 60px 16px;
   }
 
-  .faq-grid {
-    grid-template-columns: 1fr;
+  .faq-question {
+    padding: 16px 18px;
   }
 }
 
-@media (max-width: 480px) {
-  .benefits-section {
-    padding: 40px 15px;
+@media (max-width: 400px) {
+  .modules-grid {
+    grid-template-columns: 1fr;
   }
 
-  .benefits-grid {
-    gap: 24px;
+  .module-card {
+    min-height: auto;
+    padding: 20px;
   }
 
-  .benefit-item {
-    margin-bottom: 24px;
-  }
-
-  .section-title-benefit {
-    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  .module-title {
+    font-size: 0.8rem;
   }
 }
