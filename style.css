@@ -40,6 +40,7 @@ body {
   background: url(assets/banner.png);
   background-size: cover;
   background-position: right center;
+  background-attachment: fixed;
   color: white;
   padding: 80px 40px 100px;
   position: relative;
@@ -239,9 +240,11 @@ body {
 .benefits-section {
   background: url(assets/teste.png);
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 80px 40px;
+  min-height: 600px;
 }
 
 .section-title-benefit {
@@ -981,7 +984,7 @@ footer {
   /* Benefits */
   .benefits-section {
     background-size: auto;
-    background-position: right center;
+    background-position: left center;
   }
 
   .benefits-grid {
@@ -1130,6 +1133,7 @@ footer {
   /* Benefits */
   .benefits-section {
     padding: 48px 16px;
+    background-position: left center;
   }
 
   .benefit-item {
