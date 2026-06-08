@@ -110,31 +110,16 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 }
 @keyframes pulse {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 }
-
-/*.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}*/
 
 /* ===================== TRUTH ===================== */
 .truth-section {
@@ -326,7 +311,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
@@ -334,10 +319,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 }
 
@@ -566,7 +548,7 @@ body {
   text-decoration: none;
   transition: all 0.3s;
   max-width: fit-content;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
@@ -574,10 +556,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 }
 
@@ -809,7 +788,7 @@ body {
   text-align: center;
   margin: 0 auto;
   max-width: 90%;
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
@@ -817,10 +796,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+    transform: scale(1.05);
   }
 }
 
