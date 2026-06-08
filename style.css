@@ -37,7 +37,7 @@ body {
 }
 
 .hero {
-  background: url(assets/hero.png);
+  background: url(assets/banner.png);
   background-size: cover;
   background-position: right center;
   color: white;
@@ -110,9 +110,21 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.hero-image {
+/*.hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +134,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-}
+}*/
 
 /* ===================== TRUTH ===================== */
 .truth-section {
@@ -240,7 +252,7 @@ body {
 
 /* ===================== BENEFITS ===================== */
 .benefits-section {
-  background: url(assets/benefits.png);
+  background: url(assets/teste.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +263,7 @@ body {
   font-family: var(--serif);
   font-size: clamp(1.4rem, 3.5vw, 2.25rem);
   text-transform: uppercase;
-  color: #620a1a;
+  color: var(--bege);
   line-height: 1.2;
   margin-bottom: 24px;
   font-weight: 500;
@@ -276,9 +288,9 @@ body {
   position: absolute;
   left: 5px;
   top: 6px;
-  bottom: 120px;
+  bottom: 140px;
   width: 2px;
-  background-color: #670003;
+  background-color: var(--bege);
 }
 
 .benefit-item {
@@ -294,26 +306,39 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #670003;
+  background-color: var(--bege);
 }
 
 .benefit-desc {
   font-size: clamp(1rem, 1.8vw, 1.2rem);
   font-family: var(--sans);
   line-height: 1.7;
-  color: var(--text-muted);
+  color: var(--bege);
 }
 
 .cta-button-benefits {
   display: inline-block;
-  background: var(--bordo);
-  color: var(--bege);
+  background: var(--bege);
+  color: var(--bordo);
   padding: 12px 32px;
   border-radius: 8px;
   font-size: clamp(1rem, 3vw, 1.5rem);
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* ===================== SYSTEM ===================== */
@@ -335,7 +360,7 @@ body {
 }
 
 .section-intro-org {
-  color: var(--bordo);
+  color: var(--preto-fundo);
   font-family: var(--sans);
   text-align: center;
   font-size: clamp(1rem, 2vw, 1.1rem);
@@ -374,7 +399,6 @@ body {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-btn {
@@ -542,6 +566,19 @@ body {
   text-decoration: none;
   transition: all 0.3s;
   max-width: fit-content;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .comparison-right {
@@ -772,6 +809,19 @@ body {
   text-align: center;
   margin: 0 auto;
   max-width: 90%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .price-info {
@@ -789,8 +839,8 @@ body {
 
 /* Bônus */
 .bonus-section {
-  margin-top: 80px;
-  padding-top: 60px;
+  margin-top: 40px;
+  padding-top: 40px;
   border-top: 2px solid rgba(139, 46, 58, 0.2);
 }
 
@@ -800,37 +850,30 @@ body {
   font-size: clamp(1.4rem, 3vw, 1.8rem);
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 40px;
-  color: #620a1a;
+  margin-bottom: 20px;
+  color: var(--bege);
 }
 
-.bonus-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.bonus-list li {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px 0 12px 32px;
+  position: relative;
+  line-height: 1.7;
+  text-align: left;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  color: var(--bege);
 }
 
-.bonus-item {
-  background: white;
-  padding: 32px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
-.bonus-item h4 {
-  font-size: 1rem;
+.bonus-list li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #4a7c59;
   font-weight: 700;
-  color: var(--bordo);
-  margin-bottom: 12px;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.bonus-item p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-dark);
-  text-align: center;
+  font-size: 1.2rem;
 }
 
 /* ===================== FAQ ===================== */
