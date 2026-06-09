@@ -40,7 +40,7 @@ body {
   background: url(assets/banner.png);
   background-size: cover;
   background-position: right center;
-  background-attachment: fixed;
+  min-height: 600px;
   color: white;
   padding: 80px 40px 100px;
   position: relative;
@@ -114,7 +114,8 @@ body {
   animation: pulse 3s infinite;
 }
 @keyframes pulse {
-  0% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -238,13 +239,11 @@ body {
 
 /* ===================== BENEFITS ===================== */
 .benefits-section {
-  background: url(assets/teste.png);
+  background: url(assets/group.png);
   background-size: cover;
-  background-position: right center;
+  background-position: left center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 80px 40px;
-  min-height: 600px;
+  padding: 40px 40px;
 }
 
 .section-title-benefit {
@@ -260,9 +259,8 @@ body {
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  align-items: start;
   margin-top: 48px;
 }
 
@@ -276,7 +274,7 @@ body {
   position: absolute;
   left: 5px;
   top: 6px;
-  bottom: 140px;
+  bottom: 80px;
   width: 2px;
   background-color: var(--bege);
 }
@@ -304,6 +302,10 @@ body {
   color: var(--bege);
 }
 
+.cta-container {
+  justify-self: left;
+}
+
 .cta-button-benefits {
   display: inline-block;
   background: var(--bege);
@@ -318,7 +320,8 @@ body {
 }
 
 @keyframes pulse {
-  0% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -555,7 +558,8 @@ body {
 }
 
 @keyframes pulse {
-  0% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -647,14 +651,15 @@ body {
 
 /* ===================== INCLUDED ===================== */
 .included-section {
-  background: var(--bege);
+  background: #2d2728;
   padding: 100px 40px;
 }
 
 .section-title-included {
-  color: var(--bordo);
+  color: var(--bege);
   font-family: var(--serif);
   font-size: clamp(1.4rem, 3.5vw, 2.5rem);
+  text-transform: uppercase;
   font-weight: 500;
   text-align: center;
   margin-bottom: 24px;
@@ -666,7 +671,7 @@ body {
   font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 400;
   line-height: 1.5;
-  color: var(--preto-fundo);
+  color: var(--bege);
   max-width: 900px;
   margin: 0 auto 64px;
 }
@@ -683,7 +688,6 @@ body {
   padding: 40px;
   border-radius: 12px;
   border: 2px solid #e0dbd7;
-  box-shadow: 0 20px 60px rgba(163, 30, 33, 0.15);
   max-width: 600px;
   width: 100%;
   height: fit-content;
@@ -704,7 +708,7 @@ body {
 }
 
 .included-list li {
-  padding: 12px 0 12px 32px;
+  padding: 5px 0 12px 32px;
   position: relative;
   line-height: 1.7;
   text-align: left;
@@ -795,7 +799,8 @@ body {
 }
 
 @keyframes pulse {
-  0% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -827,7 +832,7 @@ body {
   font-family: var(--serif);
   font-weight: 500;
   font-size: clamp(1.4rem, 3vw, 1.8rem);
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
   color: var(--bege);
@@ -838,7 +843,7 @@ body {
   padding: 0;
   max-width: 600px;
   margin: 0 auto;
-  padding: 12px 0 12px 32px;
+  padding: 5px 0 12px 32px;
   position: relative;
   line-height: 1.7;
   text-align: left;
@@ -1062,10 +1067,14 @@ footer {
     grid-template-columns: 1fr;
     gap: 0;
   }
+  .check-icon {
+    width: 20px;
+    height: 20px;
+  }
 
   .included-left {
     max-width: 100%;
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px;
   }
 
   .included-right {
@@ -1073,14 +1082,15 @@ footer {
   }
 
   .price-box {
-    margin-top: 0;
-    border-radius: 0 0 12px 12px;
+    margin-top: 10px;
+    border-radius: 12px;
     padding: 40px 24px;
     max-width: 100%;
   }
 
   .product-mockup img {
     margin-top: 24px;
+    display: none; /* Esconde mockup no tablet para não poluir */
   }
 
   /* Bonus */
@@ -1113,7 +1123,6 @@ footer {
     padding: 14px 24px;
     width: 100%;
     text-align: center;
-    margin-left: 0;
   }
 
   /* Truth */
@@ -1221,22 +1230,7 @@ footer {
   }
 
   .price-intro {
-    margin-left: 0;
     max-width: 100%;
-  }
-
-  /* Bonus */
-  .bonus-section {
-    margin-top: 48px;
-    padding-top: 40px;
-  }
-
-  .bonus-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bonus-item {
-    padding: 24px 20px;
   }
 
   /* FAQ */
